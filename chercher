@@ -1,0 +1,38 @@
+
+<?php
+include ("database.php");
+if (isset($_POST['input'])){
+	$input=$_POST['input'];
+	$tables=mysqli_query($connexion,"SHOW TABLES");
+	   while ($table=mysqli_fetch_object($tables))
+	   {
+		  		
+		    $table_name=$table->{"Tables_in_pharma"};
+	        $sql= "select  * from ".$table_name."  where nomcommercial like '{$input}%' ";		
+			$result=mysqli_query($connexion, $sql);
+			
+		if(mysqli_num_rows($result)>0){?>
+			<table class="table table-bordered table-striped mt-4">
+			<thead>
+			<tr>
+			<td>NOM COMMERCIAL DE MEDICAMENT</td>
+			<td>OPERATION</td>
+			</tr>
+			</thead>
+			<tbody>
+			<?php 
+			while($row = mysqli_fetch_assoc($result)){
+			if ($row["quantite"]>0){ 
+			$nomcommercial=$row['nomcommercial'];
+			 ?><input type="submit" name="ajouter"  width="10px"/> 	
+		<tr>
+		<td><?php echo $nomcommercial.?></td> 
+		
+		<?php
+			} ?>
+			</tbody>
+			</table>
+			<?php
+		}else{echo "NO medicamement exist sous ce nom";}
+
+	
