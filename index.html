@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+  
+    <meta charset="utf-8">
+     <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+     <meta name="generator" content="Hugo 0.108.0">
+       <link type="text/css" rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="css/monstyle.css" type="text/css" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- CSS -->
+       <link href="http://fonts.googleapis.com/earlyaccess/droidarabickufi.css" rel="stylesheet">
+       <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+       	<link href="http://fonts.googleapis.com/earlyaccess/droidarabickufi.css" rel="stylesheet">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+   
+    <link href="carousel.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+   
+    <!-- Custom styles for this template -->
+	         <title> دوايا - APPLICATION WEB POUR LA GESTION PHARMACEUTIQUE ET VISITE MEDICALE</title>
+  
+	   
+</head>
+
+<body>
+
+ 
+ <div class="container ">
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+	
+		<div class="navbar-header" >
+	
+	
+			 <a href="http://www.facebook.com" target="_self" title="suivez nous sur notre page facebook">
+			<img src="img/facebook.png" style="width:15px;border:none;" alt="" />
+			</a>
+			&emsp;
+			<a href="http://www.twitter.com" target="_self" title="suivez nous sur notre page twitter">
+			<img src="img/twitter.png" style="width:25px;border:none;" alt="" />
+			</a>			
+			&emsp;
+			
+		   <font color="white"> <span class="fa fa-phone" ></span> 0698.06.31.35 </font>
+			&emsp;
+			<font color="white"><span class="fa fa-envelope"></span> sabrina.zerrougui@univ-oeb.dz</font>
+			
+</div>
+
+<nav class="nav navbar-nav navbar-right">
+
+	
+		<ul class="nav navbar-nav">
+		
+		<div class="navbar-header">
+				
+					<div id="clockdate">
+				<div class="clockdate-wrapper">
+					<div id="clock"></div>
+					<div id="date"><font color="white"><?php echo date("l, F j, Y"); ?></font></div>
+				</div>
+			
+				
+		</div>
+</ul>
+</nav>
+</nav>
+
+
+
+</div>
+
+
+<main>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" align="center">
+  <!-- Indicators -->
+  
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+       <div class="item active">
+          <img src="images/team2.png" alt="" width="100%" height="100%">
+          <div class="carousel-caption">
+		   <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          
+          </div>
+       </div>
+
+    <div class="item">
+        <img src="images/team.png" alt="" width="100%" height="100%">
+        <div class="carousel-caption" > 
+		<h1 >Vous etres un docteur</font></h1>
+                       <p><a class="btn btn-lg btn-primary" href="nouveau-docteur.php">inscrire</a></p>
+          
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="images/fff.png" alt="" width="100%" height="100%" >
+        <div class="carousel-caption">
+		
+            <h1>Vous etes pharmacie</h1>
+          
+            <p><a class="btn btn-lg btn-primary" href="nouveau-harmacie.php">inscrire</a></p>
+          
+        </div>
+    </div>
+ 
+  <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+           <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+           <span class="glyphicon glyphicon-chevron-right"></span>
+         </a>
+		     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+ <ol class ="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+ </div>
+
+  
+<?php
+echo '
+	
+
+<div id = "header" >
+
+<nav id="navigation"  >
+
+
+	<ul>
+	 <li>  <a href="index.php"><span class="Home" ><i class="fa fa-home" style="font-size: 30; color: #fff ;"  ></i></span> </a><a href="index.php">ACCUEIL</a>	</li>
+
+		<li><a href="page-docteur.php" target="_self" title="Vous etes un profetionnel de sante">
+			<span class="Login"><i class="fa fa-user-md" style="font-size: 30; color: #fff ;"  ></i></span> </a>
+			<a href="page-docteur.php">DOCTEURS</a>
+			</a>			
+			&emsp;</li>
+	<li><a href="page-pharmacie.php" target="_self" title="Vous etes un pharmacien">
+			<span class="Login"><i class="fa fa-flask"  style="font-size: 30; color: #fff ;"></i></span> </a>
+			<a href="page-pharmacie.php">PHARMACIES</a>
+			</a>			
+			&emsp;</li>
+<li><a href="chercher-pharmacie.php" target="_self" title="Vous etes un malade">
+			<span class="Login"><i class="fa fa-users" style="font-size: 30; color: #fff ;"  ></i></span> </a>
+			<a href="page-client.php">CLIENTS</a>
+			</a>			
+			&emsp;</li>
+          <li><a href="contact.php" target="_self" title="contactez-nous">
+			<span class="Login"><i class="fa fa-envelope" style="font-size: 30; color: #fff ;"  ></i></span> </a>
+			<a href="contact.php">CONTACT</a>
+			</a>			
+			&emsp;</li>			    	
+			
+	</ul>	
+</nav>
+
+
+   <div id ="logo_div" >     <h1  dir="rtl" id = "univ" height="110px"  align= "right" color="red"> 
+  	<img src="images/logo site.png" height="70px" width="120px"></div></center> </i>     </div>
+	
+	</div>
+	
+	</div>
+	
+	<div id="clockdate">
+				<div class="clockdate-wrapper">
+					<div id="clock"></div>
+					<div id="date"><?php echo date("l, F j, Y"); ?></div>
+				</div>
+			</div>
+	';
+		
+
+	?> 
+   
+  </header>
+ </main> 
+</DIV></DIV>
+
+  <div class="container marketing" align="center">
+ <center>
+    <!-- Three columns of text below the carousel -->
+    <div class="row"  >
+	 <center>
+      <div class="col-lg-3" >
+       <a href="listedocteur.php"> <img  class="bd-placeholder-img rounded-circle"   width="140" height="140" role="img" src="images/download.jpg" >
+		</text></img>		
+        <h2 class="fw-normal"> Liste docteurs </h2>   </a> 
+         </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3" align="center">
+        
+	<a href="liste-pharmacies.php"><img class="bd-placeholder-img rounded-circle"   width="140" height="140" role="img" src="images/pharmacy.jpg" >
+		</img>
+		
+        <h2 class="fw-normal" align="center">Liste pharmacies</h2>  </a>    
+      </div><!-- /.col-lg-4 -->
+	  
+	  
+      <div class="col-lg-3" align="center">
+     	 <a href="liste-medicaments.php">  <img class="bd-placeholder-img rounded-circle"  width="140" height="140"   role="img" src="images/hom.jpeg" >
+		</img>
+        <h2 class="fw-normal">Liste medicaments</h2></a>
+              </div><!-- /.col-lg-4 -->
+			  <div class="col-lg-3" >
+       <a href="https://snapooumelbouaghi.yolasite.com"> <img  class="bd-placeholder-img rounded-circle"  
+	   width="140" height="140" role="img" src="images/snapo.jpg" >
+		</text></img>		
+        <h3 class="fw-normal">SNAPO OEB</h3>   </a> 
+         </div><!-- /.col-lg-4 -->
+   
+    </div><!-- /.row -->
+	 
+
+
+ </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  
+     
+
+	
+
+
+
+	     
+     </body>
+
+
+		 </div>
+		 
+<footer role="contentinfo" align="center" > 
+
+    <a href="#">Back to top</a>
+ 	
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-md-3 offset-md-1 mb-3">
+        <h2>MIDECAMENTS</h2>
+    <div id="homepage-connect-before" align="left">
+        <ul>
+           <a href="liste-medicaments.php">Gammes et Bibliotheque</a><br>
+            <a class="listdocteur.php">Specialites</a><br>
+            <a href="#">Substances actives</a><br>
+            </ul>
+    </div></div>
+      <div class="col-md-3 offset-md-1 mb-3">
+        <h2>LIENS UTILS</h2>
+		  <div id="homepage-connect-before" align="left">
+  
+        <ul >
+          <a href="http://www.sante.gov.dz/">
+		  Ministere de la sante de la population et de la reforme hospitaliere</a><BR>
+          <a href="https://www.who.int/fr">Organisation mondiale de la sante</a><BR>
+         
+               </ul>
+      </div></div>
+
+     
+      <div class="col-md-3 offset-md-1 mb-3">
+        <form>
+         
+          <H2>CONTACTER NOUS</H2>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address"><p></p>
+            <button class="btn btn-primary" type="button">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+<br>
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© MAI 2023 ,tous les drois reserver pour les realisateurs de site		
+			
+			</p>
+      
+        <a  href="http://www.facebook.com"><img class="bi" width="24" height="24"  src="img/facebook.png"></img></a>
+        <a  href="http://www.twitter.com"><img class="bi" width="24" height="24" src="img/twitter.png"></img></a>
+      </ul>
+    </div>
+  </footer>
+
+</html> 
